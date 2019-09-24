@@ -5,9 +5,50 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="/main.scss")
-    script(src="/main.js")
+    link(href='https://fonts.googleapis.com/css?family=Cantarell:700|Open+Sans&display=swap', rel='stylesheet')
     title Résumé
-  body.A5
+  body.letter
     section.sheet.padding-10mm
       article#resume
-        h1.is-size-2 Stel Abrego
+        h1= name
+        p= location + " | " + email + " | " + phoneNumber
+        .columns
+          .column
+            h2 Education
+            for item in education
+              p=item.institution + ", " + item.location
+              p=item.degree + ": GPA " + item.gpa
+          .column
+            h2 Technical Skills
+            for skill in technicalSkills
+              p=skill.category + ": " + skill.specifics.join(', ')
+        h2 Projects
+        for project in projects
+          p
+            b=project.title + ": "
+            =project.tools.join(', ')
+            br
+            =project.description
+        h2 Experience
+        for item in experience
+          p
+            b=item.organization + ", " + item.role + ', ' + item.location + ' | ' + item.yearStart
+              if !item.yearEnd
+                =' - present'
+              else if item.yearStart === item.yearEnd
+                = ''
+              else
+                = ' - ' + item.yearEnd
+          ul
+            for accomplishment in item.accomplishments
+              li
+                p=accomplishment
+        h2 Activities
+        ul
+          for activity in activities
+            li
+              p=activity
+          
+
+
+

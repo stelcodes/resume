@@ -1,8 +1,52 @@
-@import '../node_modules/paper-css/paper.css';
+$column-gap: 0;
+
 @import '../node_modules/bulma/sass/utilities/_all.sass';
 @import '../node_modules/bulma/sass/base/_all.sass';
-@import '../node_modules/bulma//sass/grid/columns.sass';
+@import '../node_modules/bulma/sass/grid/columns.sass';
 
 
-@page { size: A5 }
+@page { margin: 0 }
+body { margin: 0 }
+.sheet {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/** Paper sizes **/
+body.letter .sheet { max-width: 216mm; height: 279mm }
+
+/** Padding area **/
+.sheet.padding-10mm { padding: 10mm }
+.sheet.padding-15mm { padding: 15mm }
+.sheet.padding-20mm { padding: 20mm }
+.sheet.padding-25mm { padding: 25mm }
+
+/** For screen preview **/
+@media screen {
+  body { background: #e0e0e0 }
+  .sheet {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+  body.letter { width: 216mm }
+}
+
+
+@page { size: letter }
 html { background-color: #e0e0e0;}
+body {font-family: 'Open Sans', sans-serif;}
+h1, h2, h3 {font-family: 'Cantarell', sans-serif;}
+h1, h2 {text-transform: uppercase}
+h1 {font-size: 2rem;}
+h2 {font-size: 1.3rem; margin-top: 1rem; margin-bottom: .1rem}
+p {font-size: .9rem;}
+li {list-style: disc outside; padding-left: 2rem; font-size: .5rem; margin-left: 1.5rem;}
+li p {font-size: .9rem; position:  relative; top: 3px}

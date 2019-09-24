@@ -9,13 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "cssnano": "^4.1.10",
     "pug": "^2.0.4",
     "sass": "^1.22.12"
   },
   "dependencies": {
     "bulma": "^0.7.5",
     "paper-css": "^0.4.1",
+    "parcel-plugin-inliner": "^1.0.10",
     "parcel-plugin-inlinesvg": "^0.1.1",
+    "posthtml": "^0.11.6",
+    "posthtml-inline-assets": "^3.0.0",
     "standard": "^14.3.1"
   }
 }
