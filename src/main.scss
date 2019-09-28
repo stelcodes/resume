@@ -16,7 +16,7 @@ body { margin: 0 }
 }
 
 /** Paper sizes **/
-body.letter .sheet { max-width: 216mm; height: 279mm }
+body.letter .sheet { max-width: 216mm; min-height: 279mm }
 
 /** Padding area **/
 .sheet.padding-10mm { padding: 10mm }

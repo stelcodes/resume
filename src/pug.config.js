@@ -16,28 +16,47 @@ module.exports = {
     ],
     technicalSkills: [
       {
-        category: 'Front End Web Development',
+        category: 'Frontend',
         specifics: [
-          'JS',
+          'Javascript',
+          'React',
+          'JQuery',
           'CSS',
           'SASS',
-          'JQuery',
-          'HTML'
+          'Bulma',
+          'Bootstrap'
         ]
       },
       {
-        category: 'Back End Web Development',
+        category: 'Backend',
         specifics: [
           'Node',
           'Express',
-          'PostgreSQL',
-          'MySQL'
+          'Java',
+          'Python',
+          'PostgreSQL'
+        ]
+      },
+      {
+        category: 'Deployment',
+        specifics: [
+          'Docker',
+          'Bash',
+          'Linux',
+          'AWS SDK'
+        ]
+      },
+      {
+        category: 'Static Site Generation',
+        specifics: [
+          'Hugo',
+          'Pug'
         ]
       }
     ],
     projects: [
       {
-        title: 'Event Hosting Web App (flittermouse.io)',
+        title: 'Events Web App (flittermouse.io)',
         tools: [
           'HTML/CSS',
           'Javascript',
@@ -47,18 +66,41 @@ module.exports = {
           'Redis',
           'Docker'
         ],
-        description: 'built a cool website'
+        description: 'Independently built and deployed web app for users to host, share, and RSVP to events. Implemented features allowing users to create account, login, logout, follow other users, create events, RSVP, and update their profile including ability to upload photo (AWS SDK). Features responsive UI, animations, flexbox styling, AJAX form submissions, sessions (Redis), relational database (Postgres), and containerized deployment (Docker).'
+      },
+      {
+        title: 'Web Scraper',
+        tools: [
+          'Python',
+          'Selenium',
+          'requests',
+          'beautiful_soup'
+        ],
+        description: 'Independently built web scraper which locates and scrapes data from a University of Michigan React app using the Selenium library to programatically interface with the UI and regex pattens to locate data. Created for the Boycott Wendy\'s farmworker justice campaign in Ann Arbor, MI.'
       },
       {
         title: 'Portfolio Website (stelabrego.com)',
         tools: [
           'Go',
           'Javascript',
-          'HTML/CSS'
-        ]
+          'HTML/CSS',
+          'Hugo',
+          'Markdown'
+        ],
+        description: 'Independently built and deployed website for professional inquery featuring coding project write-ups and tutoring information. Features responsive UI, CSS animations, flexbox styling, inline SVG\'s. Built with Go templating and Markdown content. Deployed via Netlify.'
       }
     ],
     experience: [
+      {
+        organization: 'Freelance',
+        role: 'Computer Programming Tutor',
+        location: 'Ann Arbor, MI',
+        yearStart: 2019,
+        accomplishments: [
+          'Continued empowering a diverse set of computer programming students by teaching them programming fundementals',
+          ''
+        ]
+      },
       {
         organization: 'Washtenaw Community College',
         role: 'Computer Programming Tutor',
@@ -72,8 +114,8 @@ module.exports = {
       }
     ],
     activities: [
-      'Facilitated Trans Together',
-      'Gave a speech at the LAND'
+      'Since August 2018, organizes a monthly transgender social and support group called Trans Together in Ypsilanti, MI at Riverside Arts Center with over 50 members.',
+      'Delivered a lightning talk at the LAND (Liberal Arts Network for Development) conference discussing common issues for transgender students in college classrooms.'
     ]
   }
 }
