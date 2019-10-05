@@ -29,7 +29,6 @@ body.letter .sheet { width: 216mm; height: 279mm }
 
 /** For screen preview **/
 @media screen {
-  body { background: #e0e0e0 }
   .sheet {
     background: white;
     box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
@@ -40,11 +39,13 @@ body.letter .sheet { width: 216mm; height: 279mm }
 /** Fix for Chrome issue #273306 **/
 @media print {
   body.letter { width: 216mm }
+  body { background: #e0e0e0 }
 }
 
 
 @page { size: letter }
 html { background-color: #e0e0e0;}
+body { background: #e0e0e0 }
 body {font-family: 'Open Sans', sans-serif;}
 h1, h2, h3 {font-family: 'Cantarell', sans-serif;}
 h1, h2 {text-transform: uppercase}
