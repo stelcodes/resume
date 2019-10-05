@@ -94,9 +94,10 @@ module.exports = {
     {
       title: 'Networked Multiplayer Chess App',
       tools: [
-        'Java'
+        'Java',
+        'Swing'
       ],
-      description: 'Created ',
+      description: 'Created chess app using sockets, object streams, and attractive Swing GUI. Implemented interactive chess board and features including turns and move validation.',
       id: 3
     },
     {
