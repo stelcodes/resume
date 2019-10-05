@@ -16,41 +16,49 @@ html(lang="en")
         .columns
           .column.is-4
             h2 Education
-            for item in education
-              p=item.institution
-              p=item.location
-              p=item.degree
-              p="GPA " + item.gpa
+            if education
+              for item in education
+                p=item.institution
+                p=item.location
+                p=item.degree
+                p="GPA " + item.gpa
           .column.is-8
             h2 Technical Skills
-            for skill in technicalSkills
-              p=skill.category + ": " + skill.specifics.join(', ')
+            if technicalSkills
+              for skill in technicalSkills
+                p
+                  b=skill.category + ": "
+                  =skill.specifics.join(', ')
         h2 Projects
-        for project in projects
-          p
-            b=project.title + ": "
-            =project.tools.join(', ')
-            br
-            =project.description
+        if projects
+          for project in projects
+            p.experience-item
+              b=project.title + ": "
+              =project.tools.join(', ')
+              br
+              =project.description
         h2 Experience
-        for item in experience
-          p
-            b=item.organization + ", " + item.role + ', ' + item.location + ' | ' + item.yearStart
-              if !item.yearEnd
-                =' - present'
-              else if item.yearStart === item.yearEnd
-                = ''
-              else
-                = ' - ' + item.yearEnd
-          ul
-            for accomplishment in item.accomplishments
-              li
-                p=accomplishment
+        if experience
+          for item in experience
+            .experience-item
+              p
+                b=item.organization + ", " + item.role + ', ' + item.location + ' | ' + item.yearStart
+                  if !item.yearEnd
+                    =' - present'
+                  else if item.yearStart === item.yearEnd
+                    = ''
+                  else
+                    = ' - ' + item.yearEnd
+              ul
+                for accomplishment in item.accomplishments
+                  li
+                    p=accomplishment
         h2 Activities
         ul
-          for activity in activities
-            li
-              p=activity
+          if activities
+            for activity in activities
+              li
+                p=activity
           
 
 
