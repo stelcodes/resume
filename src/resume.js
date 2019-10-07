@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Stel Abrego',
-  location: 'Ypsilanti, MI',
+  location: 'Ann Arbor, MI',
   email: 'stelabrego@icloud.com',
   phoneNumber: '734-770-4765',
   education: [
@@ -130,9 +130,29 @@ module.exports = {
       yearStart: 2019,
       accomplishments: [
         'Continued teaching computer programming to a diverse set of students from University of Michigan and other schools.'
+      ],
+      id: 0
+    },
+    {
+      organization: 'Freelance',
+      role: 'Computer Programming Tutor',
+      location: 'Ann Arbor, MI',
+      yearStart: 2019,
+      accomplishments: [],
+      id: 1
+    },
+    {
+      id: 2,
+      organization: 'Freelance',
+      role: 'Web App Developer',
+      location: 'Ann Arbor, MI',
+      yearStart: 2019,
+      accomplishments: [
+        'Built event app (flittermouse.io) for client.'
       ]
     },
     {
+      id: 3,
       organization: 'Washtenaw Community College',
       role: 'Computer Programming Tutor',
       location: 'Ann Arbor, MI',
@@ -140,7 +160,7 @@ module.exports = {
       yearEnd: 2019,
       accomplishments: [
         'Taught 40 teenagers and adults how to code with Java, Python, and C++.',
-        'Worked with a team of 8 other tutors to provide assistance to students taking computer programming classes.'
+        'Worked with a team of 8 other tutors to provide assistance to students taking CS classes.'
       ]
     }
   ],
