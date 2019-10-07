@@ -68,7 +68,7 @@ module.exports = {
         'Redis',
         'Docker'
       ],
-      description: 'Independently built and deployed web app for users to host, share, and RSVP to events. Implemented features such as create account, login, logout, follow other users, create events, RSVP, update bio, and upload photo (AWS SDK). Designed app with responsive UI, animations, AJAX form submissions, sessions (Redis), relational database (Postgres), HTML templating (Pug) and containerized deployment (Docker).',
+      description: 'Independently built and deployed web app for users to host, share, and RSVP to events. Implemented features such as create account, login, logout, search events, follow other users, create events, RSVP, update bio, and upload photo (AWS SDK). Designed app with responsive UI, animations, AJAX form submissions, sessions (Redis), relational database (Postgres), HTML templating (Pug) and containerized deployment (Docker).',
       id: 0
     },
     {
@@ -148,7 +148,7 @@ module.exports = {
       location: 'Ann Arbor, MI',
       yearStart: 2019,
       accomplishments: [
-        'Built event app (flittermouse.io) for client.'
+        'Built event web app (flittermouse.io) for client to coordinate activist events.'
       ]
     },
     {

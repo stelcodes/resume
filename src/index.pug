@@ -6,7 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="icon" href="https://stelabrego.com/favicon.png")
     link(rel="stylesheet", href="/main.scss")
-    link(href='https://fonts.googleapis.com/css?family=Cantarell:700|Open+Sans&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Cantarell:700|Open+Sans:400,700&display=swap', rel='stylesheet')
     title Résumé | Stel Abrego
   body.letter
     section.sheet.padding-10mm
@@ -27,7 +27,7 @@ html(lang="en")
             if technicalSkills
               for skill in technicalSkills
                 p
-                  b=skill.category + ": "
+                  span.bold=skill.category + ": "
                   =skill.specifics.join(', ')
         h2 Projects
         if projects

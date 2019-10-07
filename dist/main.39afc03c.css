@@ -3033,3 +3033,7 @@ li p {
 .experience-item:not(:first-of-type) {
   padding-top: 0.5rem;
 }
+
+.bold {
+  font-weight: 700;
+}
