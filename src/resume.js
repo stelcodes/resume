@@ -1,6 +1,6 @@
 module.exports = {
   name: 'Stel Abrego',
-  location: 'Ann Arbor, MI',
+  location: 'Ypsilanti, MI',
   email: 'stelabrego@icloud.com',
   phoneNumber: '734-770-4765',
   education: [
@@ -126,7 +126,7 @@ module.exports = {
     {
       organization: 'Freelance',
       role: 'Computer Programming Tutor',
-      location: 'Ann Arbor, MI',
+      location: 'Ypsilanti, MI',
       yearStart: 2019,
       accomplishments: [
         'Continued teaching computer programming to a diverse set of students from University of Michigan and other schools.'
@@ -136,7 +136,7 @@ module.exports = {
     {
       organization: 'Freelance',
       role: 'Computer Programming Tutor',
-      location: 'Ann Arbor, MI',
+      location: 'Ypsilanti, MI',
       yearStart: 2019,
       accomplishments: [],
       id: 1
@@ -145,7 +145,7 @@ module.exports = {
       id: 2,
       organization: 'Freelance',
       role: 'Web App Developer',
-      location: 'Ann Arbor, MI',
+      location: 'Ypsilanti, MI',
       yearStart: 2019,
       accomplishments: [
         'Built event web app (flittermouse.io) for client to coordinate activist events.'
