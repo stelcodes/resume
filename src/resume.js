@@ -3,6 +3,7 @@ module.exports = {
   location: 'Ypsilanti, MI',
   email: 'stelabrego@icloud.com',
   phoneNumber: '734-770-4765',
+  other: 'github.com/stelabrego | stelabrego.com',
   education: [
     {
       institution: 'Washtenaw Community College',
