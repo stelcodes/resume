@@ -13,6 +13,14 @@ html(lang="en")
       article#resume
         h1= name
         p= location + " | " + phoneNumber + " | " + email + " | " + other
+        h2 Projects
+        if projects
+          for project in projects
+            p.experience-item
+              b=project.title + ": "
+              =project.tools.join(', ')
+              br
+              =project.description
         .columns
           .column.is-4
             h2 Education
@@ -25,18 +33,21 @@ html(lang="en")
           .column.is-8
             h2 Technical Skills
             if technicalSkills
-              for skill in technicalSkills
-                p
-                  span.bold=skill.category + ": "
-                  =skill.specifics.join(', ')
-        h2 Projects
-        if projects
-          for project in projects
-            p.experience-item
-              b=project.title + ": "
-              =project.tools.join(', ')
-              br
-              =project.description
+              for skill, index in technicalSkills
+                - var inline = (skill.second || (skill.first && index !== technicalSkills.length - 1 && technicalSkills[index + 1].second))
+                if inline
+                  if skill.second
+                    p.inline
+                      span.bold="  " + skill.category + ": "
+                      =skill.specifics.join(', ')
+                  else  
+                    p.inline
+                      span.bold=skill.category + ": "
+                      =skill.specifics.join(', ')
+                else
+                  p
+                    span.bold=skill.category + ": "
+                    =skill.specifics.join(', ')
         h2 Experience
         if experience
           for item in experience

@@ -3037,3 +3037,7 @@ li p {
 .bold {
   font-weight: 700;
 }
+
+.inline {
+  display: inline;
+}

@@ -11,6 +11,26 @@ const selectedProfile = profiles.default
 
 const processedResume = resume
 
+processedResume.technicalSkills = processedResume.technicalSkills.map((item, index, array) => {
+  const secondPairCandidate = (index !== 0 && array[index - 1].first)
+  if (!secondPairCandidate) {
+    item.first = true
+    return item
+  } else {
+    const last = array[index - 1]
+    const currentLength = (item.category + ': ' + item.specifics.join(', ')).length
+    const lastLength = (last.category + ': ' + last.specifics.join(', ')).length
+    const currentFits = (lastLength + currentLength) < 60
+    if (currentFits) {
+      item.second = true
+      return item
+    } else {
+      item.first = true
+      return item
+    }
+  }
+})
+
 processedResume.projects = selectedProfile.projects.reduce((aggregate, projectId) => {
   const selectedProject = resume.projects.find((item) => {
     return item.id === projectId

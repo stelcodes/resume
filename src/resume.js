@@ -3,7 +3,7 @@ module.exports = {
   location: 'Ypsilanti, MI',
   email: 'stelabrego@icloud.com',
   phoneNumber: '734-770-4765',
-  other: 'github.com/stelabrego | stelabrego.com',
+  other: 'github.com/stelabrego | stelabrego.com/portfolio',
   education: [
     {
       institution: 'Washtenaw Community College',
@@ -15,31 +15,38 @@ module.exports = {
   ],
   technicalSkills: [
     {
-      category: 'Web App Frontend',
+      category: 'Frontend',
       specifics: [
         'Javascript',
+        'HTML',
         'CSS',
         'SCSS',
-        'Bulma Framework'
+        'React',
+        'Webpack',
+        'Bootstrap',
+        'Bulma'
       ]
     },
     {
-      category: 'Web App Backend',
+      category: 'Backend',
       specifics: [
         'Node.js',
         'Java',
         'PHP',
+        'Python',
         'Postgres',
         'MySQL',
+        'SQLite',
         'Hugo'
       ]
     },
     {
-      category: 'Web App Deployment',
+      category: 'Deployment',
       specifics: [
-        'Docker',
         'Git',
+        'Docker',
         'Bash',
+        'Vim',
         'Linux'
       ]
     },
@@ -59,7 +66,7 @@ module.exports = {
   ],
   projects: [
     {
-      title: 'Events Web App (flittermouse.io)',
+      title: '2019 | Events Web App (flittermouse.io)',
       tools: [
         'HTML/CSS',
         'Javascript',
@@ -73,7 +80,7 @@ module.exports = {
       id: 0
     },
     {
-      title: 'Android App (Self Care)',
+      title: '2019 | Android App (Self Care)',
       tools: [
         'Android SDK',
         'SQLite'
@@ -82,7 +89,7 @@ module.exports = {
       id: 1
     },
     {
-      title: 'FBI Crime Data Analysis Project',
+      title: '2019 | FBI Crime Data Analysis Project',
       tools: [
         'Python',
         'Pandas',
@@ -93,7 +100,7 @@ module.exports = {
       id: 2
     },
     {
-      title: 'Networked Multiplayer Chess App',
+      title: '2018 | Networked Multiplayer Chess App',
       tools: [
         'Java',
         'Swing'
@@ -102,7 +109,7 @@ module.exports = {
       id: 3
     },
     {
-      title: 'Web Scraper',
+      title: '2018 | Web Scraper',
       tools: [
         'Python',
         'Selenium'
@@ -111,7 +118,7 @@ module.exports = {
       id: 4
     },
     {
-      title: 'Portfolio Website (stelabrego.com)',
+      title: ' 2019 | Portfolio Website (stelabrego.com)',
       tools: [
         'Go',
         'Javascript',
