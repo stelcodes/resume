@@ -4,10 +4,14 @@ const profiles = {
   default: {
     projects: [0, 1, 2, 3, 4],
     experience: [2, 1, 3]
+  },
+  webdev: {
+    projects: [0, 6, 5, 1, 2],
+    experience: [0, 3]
   }
 }
 
-const selectedProfile = profiles.default
+const selectedProfile = profiles.webdev
 
 const processedResume = resume
 

@@ -66,17 +66,16 @@ module.exports = {
   ],
   projects: [
     {
-      title: '2019 | Events Web App (flittermouse.io)',
+      title: '2019 | Leftist Events Web App (flittermouse.io)',
       tools: [
         'HTML/CSS',
         'Javascript',
         'Node.js',
         'Express',
         'PostgreSQL',
-        'Redis',
         'Docker'
       ],
-      description: 'Independently built and deployed web app for users to host, share, and RSVP to events. Implemented features such as create account, login, logout, search events, follow other users, create events, RSVP, update bio, and upload photo (AWS SDK). Designed app with responsive UI, animations, AJAX form submissions, sessions (Redis), relational database (Postgres), HTML templating (Pug) and containerized deployment (Docker).',
+      description: 'Independently built and deployed web app for leftist organizers to plan events. Implemented features such as create account, login, logout, search events, follow other users, create events, RSVP, update bio, and upload photo (AWS SDK). Designed app with responsive UI, animations, AJAX form submissions, sessions (Redis), relational database (Postgres), HTML templating (Pug) and containerized deployment (Docker).',
       id: 0
     },
     {
@@ -128,6 +127,18 @@ module.exports = {
       ],
       description: 'Independently built and deployed website for professional inquery. Designed site with responsive UI, CSS animations, and flexbox styling. Generated with Hugo and deployed via Netlify.',
       id: 5
+    },
+    {
+      id: 6,
+      title: '2019 | Queer Literary Magazine Concept Website',
+      tools: [
+        'Go',
+        'Javascript',
+        'CSS',
+        'Markdown',
+        'forestry.io CMS'
+      ],
+      description: 'Inspired by online literary magazines like Butter Press, I created my own literary magazine website. The fictional magazine’s mission is to publish works of LGBTQIA+ artists. It’s generated via Hugo and features custom SVG’s, fancy CSS backgrounds, and a fully integrated forestry.io content management system which makes adding and updating content incredibly easy for a non-technical editor.'
     }
   ],
   experience: [
@@ -137,7 +148,7 @@ module.exports = {
       location: 'Ypsilanti, MI',
       yearStart: 2019,
       accomplishments: [
-        'Continued teaching computer programming to a diverse set of students from University of Michigan and other schools.'
+        'Taught Python fundemtals to to 6 graduate students from the University of Michigan School of Information.'
       ],
       id: 0
     },
@@ -167,7 +178,7 @@ module.exports = {
       yearStart: 2017,
       yearEnd: 2019,
       accomplishments: [
-        'Taught 40 teenagers and adults how to code with Java, Python, and C++.',
+        'Taught 60 teenagers and adults how to code with Java, Python, and C++.',
         'Worked with a team of 8 other tutors to provide assistance to students taking CS classes.'
       ]
     }
