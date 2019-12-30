@@ -138,7 +138,7 @@ module.exports = {
         'Markdown',
         'forestry.io CMS'
       ],
-      description: 'Inspired by online literary magazines like Butter Press, I created my own literary magazine website. The fictional magazine’s mission is to publish works of LGBTQIA+ artists. It’s generated via Hugo and features custom SVG’s, fancy CSS backgrounds, and a fully integrated forestry.io content management system which makes adding and updating content incredibly easy for a non-technical editor.'
+      description: 'Created my own literary magazine website. The fictional magazine’s mission is to publish works of LGBTQIA+ artists. It’s generated via Hugo and features custom SVG’s, fancy CSS backgrounds, and a fully integrated forestry.io CMS which makes updating content easy for a non-technical editor.'
     }
   ],
   experience: [
